@@ -24,6 +24,7 @@ html {
   color: #222;
   scroll-behavior: smooth;
   line-height: 1.4;
+  font-size: var(--font-size-base);
 }
 
 body {
@@ -35,8 +36,38 @@ img {
   max-width: 100%;
 }
 
-.quotes{
+.product-shot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.LE{
+  font-size: var(--font-size-md);
+  font-weight: bold;
+}
+
+h1{ 
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+
+button {
+background-color: black;
+color:#fff;
+}
+
+.quote-wrapper{
   background-color: black;
   color:#fff;
 }
+.try-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+}
 
+.try-wrapper img{
+  padding: 2em;
+}
