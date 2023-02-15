@@ -29,6 +29,7 @@ html {
 
 body {
   margin: 0;
+  padding-left: 2em;
 }
 
 img {
@@ -36,10 +37,24 @@ img {
   max-width: 100%;
 }
 
-.product-shot {
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul{ 
+  font-size: var(--font-size-lg);
+  list-style-type: none;
+}
+.shot-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+.shot-wrapper img {
+  padding: 1em;
+  border-radius: 2rem;
 }
 
 .LE{
@@ -55,19 +70,31 @@ h1{
 button {
 background-color: black;
 color:#fff;
+font-size: var(--font-size-sm);
+padding: 1em;
+border-radius: 0.5rem;
 }
 
+
 .quote-wrapper{
+  padding: 0em;
   background-color: black;
   color:#fff;
 }
+
 .try-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-content: center;
+  display: flex;
+  flex-direction: row;
+
+}
+article {
+
 }
 
 .try-wrapper img{
   padding: 2em;
+}
+
+footer {
+  text-align: center;
 }
