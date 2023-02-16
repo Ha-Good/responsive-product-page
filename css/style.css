@@ -31,9 +31,21 @@ body {
   margin: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px; #f2f2f2 solid;
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+header img{
+  max-width: 30%;
+  max-height: 30%;
+  padding: 1em 0;
 }
 
 nav {
@@ -44,17 +56,24 @@ nav {
 nav ul{ 
   font-size: var(--font-size-lg);
   list-style-type: none;
+  display: flex;
+  gap: 1em;
+  margin-right: auto;
 }
+
 .shot-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  padding: 1em 0;
 }
 
 .shot-wrapper img {
-  padding: 1em;
-  border-radius: 2rem;
+  border-radius: 0.3rem;
 }
+
+
 
 .LE{
   font-size: var(--font-size-md);
@@ -64,11 +83,18 @@ nav ul{
 h1{ 
   font-size: var(--font-size-lg);
   font-weight: bold;
+  margin: 0;
 }
 
 h2 {
   font-size: var(--font-size-lg);
   text-align: center;
+  margin: 1em;
+}
+
+.full-section-wrapper {
+  background-color: #222;
+  color: #fff;
 }
 
 button {
@@ -82,21 +108,40 @@ border-radius: 0.5rem;
 
 .quote-wrapper{
   padding: 0em;
-  background-color: black;
-  color:#fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.quote-wrapper p{
+  padding: 1em;
+}
+
+.quote-wrapper cite {
+  padding-top: 1rem;
+}
+
+.subheading { 
+  text-align: center;
+  font-size: var(--font-size-md);
+}
+
+article {
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 0.5em;
+}
+
+article img{
+  text-align: center;
+  background-color: #888;
+  border-radius: 0.5em;
 }
 
 .try-wrapper {
-  display: flex;
-  flex-direction: row;
-
-}
-article {
-
-}
-
-.try-wrapper img{
-  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
 }
 
 footer {
