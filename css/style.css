@@ -163,6 +163,11 @@ footer {
   .main-grid-first{
     display: flex;
     align-items: flex-start;
+    gap: 1em;
+    
+  }
+  .main-grid-first div{
+    width: 50%;
   }
   
   h1 {
@@ -193,7 +198,7 @@ footer {
   .try-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 2em;
+    padding: 1em;
   }
 
   .figure{
