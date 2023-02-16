@@ -29,7 +29,6 @@ html {
 
 body {
   margin: 0;
-  padding-left: 2em;
 }
 
 img {
@@ -48,7 +47,7 @@ nav ul{
 }
 .shot-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -65,6 +64,11 @@ nav ul{
 h1{ 
   font-size: var(--font-size-lg);
   font-weight: bold;
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+  text-align: center;
 }
 
 button {
